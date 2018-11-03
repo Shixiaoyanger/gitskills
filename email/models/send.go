@@ -22,18 +22,7 @@ type Message struct {
 	Nickname string `json:"nickname" binding:"required"`
 }
 
-var messes = Message{
-	"test mail",
-	"This is the email body.",
-	"xiaoyanger@bingyan.net",
-	"yanger",
-}
-var user = SmtpClient{
-	"13156211236@163.com",
-	"shi13156211236",
-	"smtp.163.com",
-	smtp.PlainAuth("", "13156211236@163.com", "shi13156211236", "smtp.163.com"),
-}
+
 
 func GenerateAuth(addr, pass, host string) *SmtpClient {
 	client := &SmtpClient{
