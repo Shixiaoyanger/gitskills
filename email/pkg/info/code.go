@@ -1,0 +1,10 @@
+package info
+
+const(
+	SUCCESS = 200
+
+	INVALID_PARAMS = 400 //请求报文存在错误
+
+	ERROR_AUTH_CHECK_TOKEN_FAIL    = 20001
+	ERROR_AUTH_CHECK_TOKEN_TIMEOUT = 20002
+)
